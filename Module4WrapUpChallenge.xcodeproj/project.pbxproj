@@ -11,6 +11,7 @@
 		C08CC9ED269FEA2100050F54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08CC9EC269FEA2100050F54 /* ContentView.swift */; };
 		C08CC9EF269FEA2300050F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08CC9EE269FEA2300050F54 /* Assets.xcassets */; };
 		C08CC9F2269FEA2300050F54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08CC9F1269FEA2300050F54 /* Preview Assets.xcassets */; };
+		C08CC9FB269FEE7300050F54 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = C08CC9FA269FEE7300050F54 /* Data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		C08CC9EE269FEA2300050F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C08CC9F1269FEA2300050F54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C08CC9F3269FEA2300050F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C08CC9FA269FEE7300050F54 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +54,11 @@
 		C08CC9E9269FEA2100050F54 /* Module4WrapUpChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				C08CC9EA269FEA2100050F54 /* Module4WrapUpChallengeApp.swift */,
-				C08CC9EC269FEA2100050F54 /* ContentView.swift */,
 				C08CC9EE269FEA2300050F54 /* Assets.xcassets */,
+				C08CC9EC269FEA2100050F54 /* ContentView.swift */,
+				C08CC9F9269FEE3200050F54 /* Data */,
 				C08CC9F3269FEA2300050F54 /* Info.plist */,
+				C08CC9EA269FEA2100050F54 /* Module4WrapUpChallengeApp.swift */,
 				C08CC9F0269FEA2300050F54 /* Preview Content */,
 			);
 			path = Module4WrapUpChallenge;
@@ -67,6 +70,14 @@
 				C08CC9F1269FEA2300050F54 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C08CC9F9269FEE3200050F54 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C08CC9FA269FEE7300050F54 /* Data.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +139,7 @@
 			files = (
 				C08CC9F2269FEA2300050F54 /* Preview Assets.xcassets in Resources */,
 				C08CC9EF269FEA2300050F54 /* Assets.xcassets in Resources */,
+				C08CC9FB269FEE7300050F54 /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
