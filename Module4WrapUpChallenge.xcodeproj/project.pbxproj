@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C08CC9EB269FEA2100050F54 /* Module4WrapUpChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08CC9EA269FEA2100050F54 /* Module4WrapUpChallengeApp.swift */; };
-		C08CC9ED269FEA2100050F54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08CC9EC269FEA2100050F54 /* ContentView.swift */; };
+		C08CC9ED269FEA2100050F54 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08CC9EC269FEA2100050F54 /* BookListView.swift */; };
 		C08CC9EF269FEA2300050F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08CC9EE269FEA2300050F54 /* Assets.xcassets */; };
 		C08CC9F2269FEA2300050F54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08CC9F1269FEA2300050F54 /* Preview Assets.xcassets */; };
 		C08CC9FB269FEE7300050F54 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = C08CC9FA269FEE7300050F54 /* books.json */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		C08CC9E7269FEA2100050F54 /* Module4WrapUpChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Module4WrapUpChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08CC9EA269FEA2100050F54 /* Module4WrapUpChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module4WrapUpChallengeApp.swift; sourceTree = "<group>"; };
-		C08CC9EC269FEA2100050F54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C08CC9EC269FEA2100050F54 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 		C08CC9EE269FEA2300050F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C08CC9F1269FEA2300050F54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C08CC9F3269FEA2300050F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		C08CC9FD269FF2CF00050F54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C08CC9EC269FEA2100050F54 /* ContentView.swift */,
+				C08CC9EC269FEA2100050F54 /* BookListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C09559C526A37CAD00561A0E /* BookModel.swift in Sources */,
-				C08CC9ED269FEA2100050F54 /* ContentView.swift in Sources */,
+				C08CC9ED269FEA2100050F54 /* BookListView.swift in Sources */,
 				C08CC9EB269FEA2100050F54 /* Module4WrapUpChallengeApp.swift in Sources */,
 				C08CCA00269FF32400050F54 /* Book.swift in Sources */,
 				C09559C226A3735600561A0E /* DataService.swift in Sources */,
