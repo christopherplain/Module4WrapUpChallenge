@@ -14,6 +14,7 @@
 		C08CC9FB269FEE7300050F54 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = C08CC9FA269FEE7300050F54 /* books.json */; };
 		C08CCA00269FF32400050F54 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08CC9FF269FF32400050F54 /* Book.swift */; };
 		C09559C226A3735600561A0E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09559C126A3735600561A0E /* DataService.swift */; };
+		C09559C526A37CAD00561A0E /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09559C426A37CAD00561A0E /* BookModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C08CC9FA269FEE7300050F54 /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 		C08CC9FF269FF32400050F54 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		C09559C126A3735600561A0E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C09559C426A37CAD00561A0E /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		C08CC9FE269FF2ED00050F54 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C09559C426A37CAD00561A0E /* BookModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C09559C526A37CAD00561A0E /* BookModel.swift in Sources */,
 				C08CC9ED269FEA2100050F54 /* ContentView.swift in Sources */,
 				C08CC9EB269FEA2100050F54 /* Module4WrapUpChallengeApp.swift in Sources */,
 				C08CCA00269FF32400050F54 /* Book.swift in Sources */,

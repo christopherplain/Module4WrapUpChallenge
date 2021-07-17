@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var model = BookModel()
+
     var body: some View {
-        Text(DataService.getBooks()[0].title)
+        Text(model.books[0].title)
             .padding()
     }
 }
