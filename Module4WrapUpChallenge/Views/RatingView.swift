@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RatingView: View {
+    @EnvironmentObject var model: BookModel
     @State var book: Book
     
     var body: some View {
@@ -53,5 +54,6 @@ struct RatingView: View {
 struct RatingView_Previews: PreviewProvider {
     static var previews: some View {
         RatingView(book: DataService.getBooks()[0])
+            .environmentObject(BookModel())
     }
 }

@@ -12,6 +12,7 @@ struct Module4WrapUpChallengeApp: App {
     var body: some Scene {
         WindowGroup {
             LibraryView()
+                .environmentObject(BookModel())
         }
     }
 }
