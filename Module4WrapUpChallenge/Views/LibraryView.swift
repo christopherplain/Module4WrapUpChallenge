@@ -13,19 +13,12 @@ struct LibraryView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVStack(alignment: .leading) {
+                LazyVStack(alignment: .leading, spacing: 30) {
                     ForEach(model.books) { book in
-                        Text(book.title)
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        Text(book.author)
-                            .italic()
-                        Image("cover\(book.id)")
-                            .resizable()
-                            .scaledToFit()
+                        CardView(book: book)
                     }
                 }
-                .padding(.horizontal)
+                .padding(.top)
             }
             .navigationTitle("My Library")
         }
