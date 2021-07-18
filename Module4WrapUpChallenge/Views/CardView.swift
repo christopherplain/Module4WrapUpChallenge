@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CardView: View {
     @State var book: Book
-    var vstackHeight: CGFloat = 0
     
     var body: some View {
         ZStack {

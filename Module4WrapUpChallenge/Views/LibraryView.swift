@@ -15,7 +15,10 @@ struct LibraryView: View {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 30) {
                     ForEach(model.books) { book in
-                        CardView(book: book)
+                        NavigationLink(destination: RatingView(book: book)) {
+                            CardView(book: book)
+                        }
+                        .foregroundColor(.black)
                     }
                 }
                 .padding(.top)
