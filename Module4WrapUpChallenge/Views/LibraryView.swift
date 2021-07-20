@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LibraryView: View {
     @EnvironmentObject var model: BookModel
-    
+
     var body: some View {
         NavigationView {
             ScrollView {
@@ -19,6 +19,10 @@ struct LibraryView: View {
                             CardView(book: book)
                         }
                         .foregroundColor(.black)
+                        // Fix for unexpected pop
+                        NavigationLink(destination: EmptyView()) {
+                            EmptyView()
+                        }
                     }
                 }
                 .padding(.top)

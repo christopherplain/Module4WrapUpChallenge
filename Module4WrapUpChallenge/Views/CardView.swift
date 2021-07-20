@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
-    @State var book: Book
+    var book: Book
     
     var body: some View {
         ZStack {
@@ -17,9 +17,18 @@ struct CardView: View {
                 .cornerRadius(10)
                 .shadow(radius: 5)
             VStack(alignment: .leading, spacing: 10) {
-                Text(book.title)
-                    .font(.title)
-                    .fontWeight(.bold)
+                HStack {
+                    Text(book.title)
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Spacer()
+                    if book.isFavourite {
+                        Image(systemName: "star.fill")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(.yellow)
+                    }
+                }
                 Text(book.author)
                     .italic()
                 Image("cover\(book.id)")
@@ -34,6 +43,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(book: DataService.getBooks()[0])
+        CardView(book: Book())
     }
 }

@@ -9,7 +9,8 @@ import SwiftUI
 
 struct RatingView: View {
     @EnvironmentObject var model: BookModel
-    @State var book: Book
+    @State var rating = 2
+    var book: Book
     
     var body: some View {
         VStack(spacing: 40) {
@@ -24,17 +25,17 @@ struct RatingView: View {
             VStack(spacing: 20) {
                 Text("Mark for later!")
                     .font(.headline)
-                Button(action: {}, label: {
+                Button(action: { model.updateIsFavourite(forId: book.id) }) {
                     Image(systemName: book.isFavourite ? "star.fill" : "star")
                         .resizable()
-                        .frame(width: 25, height: 25)
-                })
+                        .frame(width: 30, height: 30)
+                }
                 .accentColor(.yellow)
             }
             VStack(spacing: 20) {
                 Text("Rate \(book.title)")
                     .font(.headline)
-                Picker("Rating", selection: $book.rating) {
+                Picker("Rating", selection: $rating) {
                     Text("1").tag(1)
                     Text("2").tag(2)
                     Text("3").tag(3)
@@ -53,7 +54,7 @@ struct RatingView: View {
 
 struct RatingView_Previews: PreviewProvider {
     static var previews: some View {
-        RatingView(book: DataService.getBooks()[0])
+        RatingView(book: Book())
             .environmentObject(BookModel())
     }
 }

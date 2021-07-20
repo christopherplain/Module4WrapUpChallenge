@@ -8,5 +8,15 @@
 import Foundation
 
 class BookModel: ObservableObject {
-    @Published var books = DataService.getBooks()
+    @Published var books = [Book]()
+    
+    init() {
+        books = DataService.getBooks()
+    }
+    
+    func updateIsFavourite(forId id: Int) {
+        if let index = books.firstIndex(where: { $0.id == id }) {
+            books[index].isFavourite.toggle()
+        }
+    }
 }
