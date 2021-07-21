@@ -48,7 +48,7 @@ struct RatingView: View {
                 .padding(.horizontal, 50)
                 .onAppear { rating = book.rating }
                 .onChange(of: rating) { newRating in
-                    model.updateRating(forId: book.id, rating: rating)
+                    model.updateRating(forId: book.id, rating: newRating)
                 }
             }
             Spacer()
