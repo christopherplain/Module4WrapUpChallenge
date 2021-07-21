@@ -14,6 +14,12 @@ class BookModel: ObservableObject {
         books = DataService.getBooks()
     }
     
+    func updateCurrentPage(forId id: Int, page: Int) {
+        if let index = books.firstIndex(where: { $0.id == id }) {
+            books[index].currentPage = page
+        }
+    }
+    
     func updateIsFavourite(forId id: Int) {
         if let index = books.firstIndex(where: { $0.id == id }) {
             books[index].isFavourite.toggle()
