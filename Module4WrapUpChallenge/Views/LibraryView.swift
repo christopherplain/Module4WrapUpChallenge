@@ -32,7 +32,7 @@ struct LibraryView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LibraryView_Previews: PreviewProvider {
     static var previews: some View {
         LibraryView()
             .environmentObject(BookModel())

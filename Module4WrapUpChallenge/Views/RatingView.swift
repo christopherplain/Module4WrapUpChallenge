@@ -15,14 +15,17 @@ struct RatingView: View {
     
     var body: some View {
         VStack(spacing: 40) {
-            VStack(spacing: 20) {
-                Text("Read Now!")
-                    .font(.title)
-                Image("cover\(book.id)")
-                    .resizable()
-                    .scaledToFit()
-                    .padding(.horizontal, 75)
+            NavigationLink(destination: ContentView(book: book)) {
+                VStack(spacing: 20) {
+                    Text("Read Now!")
+                        .font(.title)
+                    Image("cover\(book.id)")
+                        .resizable()
+                        .scaledToFit()
+                        .padding(.horizontal, 75)
+                }
             }
+            .foregroundColor(.black)
             VStack(spacing: 20) {
                 Text("Mark for later!")
                     .font(.headline)
